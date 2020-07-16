@@ -120,10 +120,10 @@ function getOrderRequest() {
     order: {
       line_items: [
         {
-          name: request.body.order,
+          name: "coffee",
           quantity: "1",
           base_price_money: {
-            amount: request.body.amount_money,
+            amount: 200,
             currency: "USD"
           }
         }
