@@ -120,10 +120,10 @@ function getOrderRequest() {
     order: {
       line_items: [
         {
-          name: "Cookie 🍪",
+          name: request.body.order,
           quantity: "1",
           base_price_money: {
-            amount: 100,
+            amount: request.body.amount_money,
             currency: "USD"
           }
         }
